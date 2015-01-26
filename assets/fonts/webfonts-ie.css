@@ -1,0 +1,112 @@
+
+
+/* Regular */
+@font-face {
+    font-family: 'capita';
+    font-weight: normal;
+    font-weight: 400;
+    font-style: normal;
+    src: url('CapitaReg.eot');
+    src: url('CapitaReg.eot?#iefix') format('embedded-opentype'),
+         url('CapitaReg.woff') format('woff'),
+         url('CapitaReg.ttf') format('truetype'),
+         url('CapitaReg.svg#capita') format('svg');
+}
+
+/* Regular italic*/
+@font-face {
+    font-family: 'capita';
+    font-weight: normal;
+    font-weight: 400;
+    font-style: italic;
+    src: url('CapitaIta.eot');
+    src: url('CapitaIta.eot?#iefix') format('embedded-opentype'),
+         url('CapitaIta.woff') format('woff'),
+         url('CapitaIta.ttf') format('truetype'),
+         url('CapitaIta.svg#capita') format('svg');
+}
+
+
+/* Bold */
+@font-face {
+    font-family: 'capita';
+    font-weight: bold;
+    font-weight: 700;
+    font-style: normal;
+    src: url('CapitaBol.eot');
+    src: url('CapitaBol.eot?#iefix') format('embedded-opentype'),
+         url('CapitaBol.woff') format('woff'),
+         url('CapitaBol.ttf') format('truetype'),
+         url('CapitaBol.svg#capita') format('svg');
+} 
+
+/* Bold italic*/
+@font-face {
+    font-family: 'capita';
+    font-weight: bold;
+    font-weight: 700;
+    font-style: italic;
+    src: url('CapitaBolIta.eot');
+    src: url('CapitaBolIta.eot?#iefix') format('embedded-opentype'),
+         url('CapitaBolIta.woff') format('woff'),
+         url('CapitaBolIta.ttf') format('truetype'),
+         url('CapitaBolIta.svg#capita') format('svg');
+} 
+
+
+
+/* Regular */
+@font-face {
+    font-family: 'proximanova';
+    font-weight:normal;
+    font-weight: 400;
+    font-style: normal;
+    src: url('ProximaNova-Reg.eot');
+    src: url('ProximaNova-Reg.eot?#iefix') format('embedded-opentype'),
+         url('ProximaNova-Reg.woff') format('woff'),
+         url('ProximaNova-Reg.ttf') format('truetype'),
+         url('ProximaNova-Reg.svg#proximanova') format('svg');
+}
+
+/* Regular italic*/
+@font-face {
+    font-family: 'proximanova';
+    font-weight:normal;
+    font-weight: 400;
+    font-style: italic;
+    src: url('ProximaNova-RegIt.eot');
+    src: url('ProximaNova-RegIt.eot?#iefix') format('embedded-opentype'),
+         url('ProximaNova-RegIt.woff') format('woff'),
+         url('ProximaNova-RegIt.ttf') format('truetype'),
+         url('ProximaNova-RegIt.svg#proximanova') format('svg');
+}  
+
+/* Bold */
+@font-face {
+    font-family: 'proximanova';
+    font-weight:bold;
+    font-weight: 700;
+    font-style: normal;
+     src: url('ProximaNova-Bold.eot');
+    src: url('ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+         url('ProximaNova-Bold.woff') format('woff'),
+         url('ProximaNova-Bold.ttf') format('truetype'),
+         url('ProximaNova-Bold.svg#proximanova') format('svg');
+}
+
+/* Bold italic*/
+@font-face {
+    font-family: 'proximanova';
+    font-weight:bold;
+    font-weight: 700;
+    font-style: italic;
+    src: url('ProximaNova-BoldIt.eot');
+    src: url('ProximaNova-BoldIt.eot?#iefix') format('embedded-opentype'),
+         url('ProximaNova-BoldIt.woff') format('woff'),
+         url('ProximaNova-BoldIt.ttf') format('truetype'),
+         url('ProximaNova-BoldIt.svg#proximanova') format('svg');
+}
+
+
+
+

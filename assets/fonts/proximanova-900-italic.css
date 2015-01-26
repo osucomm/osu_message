@@ -1,0 +1,47 @@
+
+/* ====================================================================
+ Proxima Nova - Sans-serif font
+==================================================================== */
+/*
+ * Web Fonts from fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and 
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2012 Fontspring
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      Mark Simonson Studio
+ * License URL: http://www.fontspring.com/fflicense/mark-simonson-studio
+ */
+
+/* Proxima Nova font-weights that can be specified in CSS
+=======================================================
+
+100 = Thin
+300 = Light
+400 = Normal
+600 = Semibold
+700 = Bold
+800 = Extra bold
+900 = Black
+
+*/
+
+@font-face {
+    font-family: 'proximanova';
+    src: url('ProximaNova-BlackIt.eot');
+    src: url('ProximaNova-BlackIt.eot?#iefix') format('embedded-opentype'),
+         url('ProximaNova-BlackIt.woff') format('woff'),
+         url('ProximaNova-BlackIt.ttf') format('truetype'),
+         url('ProximaNova-BlackIt.svg#proximanova') format('svg');
+/*     font-weight:bolder; */
+    font-weight: 900;
+    font-style: italic;
+}

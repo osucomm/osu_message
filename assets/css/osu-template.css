@@ -1,0 +1,180 @@
+/*----------------------------------
+	Baseline styles
+----------------------------------*/
+body, h1, h2, h3, h4, h5, h6, td, button, .button {font-family:'proximanova','Helvetica Neue', Helvetica, Arial,sans-serif;}
+h1, h2, h3, h4 {font-weight:400;}
+h5, h6, strong {font-weight:600;}
+a {color:#007fff; text-decoration:none;}
+a:hover {color:#222222; text-decoration:underline;}
+small, .small {font-size:80%;}
+.center {text-align:center;}
+blockquote {border-left:1px solid #bb0000; font-style:italic;}
+
+img {max-width:100%;}
+
+/*----------------------------------
+	Ohio State Navbar styles
+----------------------------------*/
+.osu-semantic {position: absolute; left: 0; top: -500px; width: 1px; height: 1px; overflow: hidden;}
+a.osu-semantic:active, 
+a.osu-semantic:focus {position: absolute; left:0; top:0; overflow:visible; font-family:'proximanova',Arial,sans-serif;}
+a#skip:active, 
+a#skip:focus {position:absolute; top:0; left:25%; width:50%; text-align:center; padding:0.5em 0 2em 0; display:block; color:#ffffff; z-index:999999999999999999; text-decoration:none; background:#666666; background:rgba(0,0,0,0.7); border-radius:0 0 6px 6px;}
+a#skip:active:hover, 
+a#skip:focus:hover {background:#bb0000; background:rgba(187,0,0,0.8);}
+
+#osu-navbar {clear:both; margin:0; padding:0; overflow:hidden; background:#b9b9ba; background: linear-gradient(to bottom,  #e3e3e3 0%,#b9b9ba 100%); border-bottom:5px solid #bb0000;}
+#osu-navbar * {font-family:'proximanova','Helvetica Neue', Helvetica, Arial, sans-serif;line-height:1.5; font-weight:normal;}
+
+/* University info */
+#osu-navbar p {margin:0; padding:0; font-size:0.825em;}
+#osu-navbar .univ-info {float:left; padding: 0.825em 0 0.625em 0 ;}
+#osu-navbar .univ-links {float:right; clear:none; padding: 0.75em 0 0; margin-top:-2px;}
+#osu-navbar .univ-name a {height:16px; width:80px; display:block; text-indent:-9999px; background: url(../images/osu-name.png) 0 0 no-repeat;}
+
+/* Links */
+#osu-navbar div.links {float:left;}
+#osu-navbar div.links ul {margin:0;}
+#osu-navbar div.links li {list-style:none; float:left; margin-left:1.5em;}
+#osu-navbar div.links a {color:#333333; text-decoration: none; font-size:13px;}
+#osu-navbar div.links a:hover {text-decoration: underline;}
+
+/* Switch Navbar container from fixed 960px centered to full-width */
+@media only screen and (max-width: 990px) {
+  #osu-navbar .container {width:100%; margin:0 10px; min-width:300px;} /* Make container full width */
+  #osu-navbar div.container .univ-name a {margin-left:0;}
+  #osu-navbar div.links ul {margin-right:1em;}
+}
+
+/* Replace text links with icons at 610px */
+@media only screen and (max-width: 610px) {
+	#osu-navbar .univ-links {padding-top: 0; margin-top:0.625em;}
+  #osu-navbar div.links ul {margin:-2px 1em 0 0;}
+  #osu-navbar div.links li {list-style:none; float:left; margin-left:.5em;}
+	#osu-navbar div.links a {font-size:20px; line-height:1.3; font-weight:300; margin-left:0.25em; color:#333333;}
+  #osu-navbar div.links .linktext {display:none;}
+  #osu-navbar div.links a.help:before {font-family: FontAwesome; content: "\f059";}
+  #osu-navbar div.links a.buckeyelink:before {font-family: FontAwesome; content: "\f0c1";}
+  #osu-navbar div.links a.map:before {font-family: FontAwesome; content: "\f041";}
+  #osu-navbar div.links a.findpeople:before {font-family: FontAwesome; content: "\f007";}
+  #osu-navbar div.links a.webmail:before {font-family: FontAwesome; content: "\f0e0";}
+  #osu-navbar div.links a.search:before {font-family: FontAwesome; content: "\f002";}
+}
+
+/* Retina univ name */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+	only screen and (min--moz-device-pixel-ratio: 1.5),
+	only screen and (-o-min-device-pixel-ratio: 3/2),
+	only screen and (min-device-pixel-ratio: 1.5) {
+		#osu-navbar .univ-name a {background-image: url(../images/osu-name@2x.png) !important; background-size: contain;}
+}
+
+/* Dark styles */
+#osu-navbar.dark {background:#222222;}
+#osu-navbar.dark .univ-name a {background: url(../images/osu-name-dark.png) 0 0 no-repeat;}
+#osu-navbar.dark div.links ul li a {color:#ffffff;}
+/* Replace text links with icons at 610px */
+@media only screen and (max-width: 610px) {
+		#osu-navbar.dark div.links ul li a {font-size:20px; line-height:1.3; font-weight:300; margin-left:0.25em; color:#ffffff;}
+}
+/* Retina univ name */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+	only screen and (min--moz-device-pixel-ratio: 1.5),
+	only screen and (-o-min-device-pixel-ratio: 3/2),
+	only screen and (min-device-pixel-ratio: 1.5) {
+		#osu-navbar.dark .univ-name a {background-image: url(../images/osu-name-dark@2x.png) !important;}
+}
+
+/*----------------------------------
+	Masthead 
+----------------------------------*/
+
+#masthead {background:#333333; background: linear-gradient(to bottom,  #222222 0%,#333333 100%);}
+#masthead h1 {color:#ffffff; text-shadow: 1px 1px 3px rgba(0,0,0,0.5); font-size:3.75em; margin:1.7em 0 0 0;  display:inline-block; font-weight:300;}
+#masthead h1.right {float:right; font-size:36px; margin:40px 0 0 0;}
+#masthead h1 a {text-decoration:none; overflow:hidden; color:#ffffff;}
+#masthead h1 a:hover {color:#ffffff; text-decoration:underline;}
+#masthead a.logo {margin:2em 0; width:344px; height:60px; background:url(../images/osu-logo.png) left center no-repeat; text-indent:-9999px; display:block; background-size: contain;}
+#masthead a.stacked-logo {margin:2em 0; width:167px; height:117px; background:url(../images/osu-logo-stacked.png) left center no-repeat; text-indent:-9999px; display:block; background-size: contain; float:right;}
+
+/*----------------------------------
+	Nav bar (overrides Bootstrap styles)
+----------------------------------*/
+.navbar-default {background:transparent; border:none; margin:1em 0 0 0;}
+.navbar-default .navbar-nav>li>a {color:#cccccc; border-left:1px solid #444444;}
+.navbar-default .navbar-nav>li>a:hover, 
+.navbar-default .navbar-nav>li>a:focus {background:#333333; color:#ffffff; text-decoration: underline;}
+.navbar-default .navbar-nav>.open>a, 
+.navbar-default .navbar-nav>.open>a:hover, 
+.navbar-default .navbar-nav>.open>a:focus {background:#ffffff; color:#333333; border-left:1px solid #b00;}
+.container-fluid, .navbar-collapse {margin:0; padding:0;}
+.dropdown-menu {border-top:none; border-left:1px solid #bb0000;}
+.dropdown-menu>li>a:hover {text-decoration: underline;}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover {background:#f7f7f7; background: linear-gradient(to bottom, #dddddd 0%,#f7f7f7 100%);}
+.bsmm .dropdown-menu {border-color:#cccccc; border-top:none;}
+.bsmm .dropdown-submenu > a:hover:after {border-left-color:#333333;}
+.bsmm-content *,.navbar-default .navbar-nav .bsmm-content li a, .navbar-default .navbar-nav .bsmm-content li a:hover, .navbar-default .navbar-nav .open .dropdown-menu .bsmm-content li a:hover{color:#333;}
+
+/*----------------------------------
+	Content
+----------------------------------*/
+section {padding-top:2em;}
+#content {padding:1em 0; background-color:#F7F7F7;}
+#sidebar h3:nth-of-type(1) {margin-top:0;}
+#sidebar .well ul {padding-left:1.1em;}
+
+/*-----------------------------------
+	Footer
+-----------------------------------*/
+#page-footer {padding:20px 0; background: #333;}
+#page-footer * {color:#fff;}
+#page-footer a.wordmark {width:295px; height:35px; background:url(../images/osu-wordmark.png) left center no-repeat; text-indent:-9999px; display:block; background-size: contain;}
+#page-footer a {text-decoration:underline;}
+#page-footer ul {margin:0;}
+#page-footer li {list-style:none; padding:0;}
+#page-footer li a {color:#ddd; text-decoration:none; font-size:12px;}
+#page-footer li a:hover {color:#fff; text-decoration:underline;}
+#page-footer hr {background:#777; background:rgba(255,255,255,0.2); color:#777; color:rgba(255,255,255,0.2); clear:both; float:none; width:100%; height:.1em; margin:0 0 1.45em; border:none;}
+#footer-info p {margin-bottom:0; font-size:13px;}
+#footer-social {text-align:right; margin-top:2em;}
+#footer-social a {margin-left:0.5em;text-decoration:none;}
+#footer-social a:hover i {color:#ccc;}
+#footer-social .dept-social {margin-bottom:1em;}
+
+/*-----------------------------------
+ Media Queries
+-----------------------------------*/
+/* XS */
+@media	(max-width: 767px) {
+	.navbar-nav > li > a {padding-left:1.5em;}
+	.bsmm .dropdown-menu > li > a {background:#333; color:#fff; }
+	.navbar-nav .open .dropdown-menu > li > a, .navbar-nav .open .dropdown-menu .dropdown-header {background:#333; padding-left:20px; padding-right:40px;}
+	.navbar-default .navbar-nav .open .dropdown-menu > a {background:#444; color:#fff; }
+	.navbar-default .navbar-nav .open > .dropdown-menu {background: linear-gradient(to bottom, #111111 0%,#222222 100%);}
+	.navbar-default .navbar-nav .open .dropdown-menu li a {background:transparent;  color:#ccc; padding-left:2.5em;}
+	.navbar-default .navbar-nav .open .dropdown-menu li li a { padding-left:3.5em;}
+	.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav .open .dropdown-menu li a:hover {background:#444; background:rgba(255,255,255,0.1); color:#fff; }
+	.navbar-default .navbar-toggle {border-color:#666666;}
+	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus, .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {background:#444444; color:#fff;}
+	.bsmm .dropdown-submenu > a:hover:after {border-left-color:#fff;}
+	#masthead a.logo, #page-footer a.wordmark {max-width:100%;}
+	#masthead a.logo {height:32px; }
+	#masthead h1 {float:none;}
+	#footer-social {text-align: left;}
+}
+/* SM */
+@media	(min-width: 768px) and (max-width:991px) {
+	.nav.navbar-nav li {font-size:12px;}
+	.nav.navbar-nav > li > a {padding-left:10px; padding-right:10px;}
+	#masthead a.logo {width:100%;}
+}
+/* Retina logos */
+@media 	only screen and (-webkit-min-device-pixel-ratio: 1.5),
+	only screen and (min--moz-device-pixel-ratio: 1.5),
+	only screen and (-o-min-device-pixel-ratio: 3/2),
+	only screen and (min-device-pixel-ratio: 1.5) {
+		#masthead a.logo {background-image: url(../images/osu-logo@2x.png) !important; background-size: contain;}
+		#masthead a.stacked-logo {background-image: url(../images/osu-logo-stacked@2x.png) !important; background-size: contain;}
+		#page-footer a.wordmark {background-image: url(../images/osu-wordmark@2x.png) !important; background-size: contain;}
+}
