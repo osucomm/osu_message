@@ -5,7 +5,8 @@
 <head>
 	<meta charset="utf-8" />
 
-	<base href="http://localhost:8888/" />
+	<base href="https://s3.amazonaws.com/osu-failover/" />
+	<!-- <base href="https://s3.amazonaws.com/osu-failover/" /> -->
 	<!-- <base href="http://localhost:8888/" /> -->
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -92,7 +93,7 @@
 	
 		<div id="institutional-info" class="col-sm-9">
 			<a href="http://www.osu.edu/" class="wordmark">The Ohio State University</a>
-			<p>&copy; 2015 The Ohio State University<br>
+			<p>&copy; <span id="copy-year">2015</span> The Ohio State University<br>
 			Student Academic Services Building | 281 W Lane Ave, Columbus, OH 43210</p>
 			<p>Contact: <a href="tel:614-292-2200">614-292-2200</a> or <a href="tel:800-678-6355">800-678-6355</a> | <a href="mailto:webmaster@osu.edu">Webmaster</a> | Page maintained by <a href="https://ocio.osu.edu/">The Office of the Chief Information Officer</a></p>
 			<p><a href="http://www.osu.edu/webmaster.php">Request</a> an alternate format of this page</p>
@@ -154,6 +155,9 @@ if(window.XDomainRequest){ // For IE
   xmlhttp.open("GET", messageUrl, true);
   xmlhttp.send();
 }
+
+var date = new Date();
+document.getElementById("copy-year").innerHTML = date.getFullYear();
 </script>
 
 </body>
