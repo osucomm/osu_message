@@ -120,7 +120,7 @@
 //Checks for browser support. If not supported, loads polyfill (for older browsers)
 	Modernizr.load({
 		test: Modernizr.mq('only all'),
-		nope: '//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js'
+		nope: 'assets/js/respond.min.js'
 	});
 </script>
 
@@ -128,7 +128,6 @@
 function displayResponse(response) {
   document.getElementById("messages").innerHTML = response;
 }
-
 
 var messageUrl = "error.html";
 
