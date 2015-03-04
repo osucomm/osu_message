@@ -17,7 +17,9 @@ blockquote {border-left:1px solid #bb0000; font-style:italic;}
 
 img {max-width:100%;}
 
-html,body { height:100%; }
+html,body {height:100%; background-color:#333;}
+body {height:100%; background-color:#333;}
+#osu-navbar, #masthead, #page-footer {display:block;}
 
 /*----------------------------------
   Ohio State Navbar styles
